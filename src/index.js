@@ -17,7 +17,14 @@ function App() {
     message = 'Hello there!';
   }
 
-  return <h1>{`${randomNumber}: ${message}`}</h1>;
+  return (
+    <div>
+      The random number is:
+      <h1>{randomNumber}</h1>
+      Which means the message is:
+      <h2>{message}</h2>
+    </div>
+  );
 }
 
 // 5) Show the component on the screen

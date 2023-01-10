@@ -28,8 +28,19 @@ function App() {
       <input
         type={inputType}
         min={minValue}
+        maxLength={5}
         style={{ border: '3px solid red' }}
       />
+      <div>
+        <input
+          maxLength={5}
+          spellCheck
+          style={{ border: '3px solid green', paddingTop: '20px' }}
+        />
+      </div>
+      <div>
+        <textarea className="foobar" autoFocus />
+      </div>
     </div>
   );
 }
